@@ -1,0 +1,19 @@
+<h2>Admin Edit Category</h2>
+
+<?php echo $this->Form->create('Ledcategory'); ?>
+<?php echo $this->Form->input('id'); ?>
+<?php echo $this->Form->input('name'); ?>
+<br />
+<?php echo $this->Form->button('Submit', array('class' => 'btn btn-primary')); ?>
+<?php echo $this->Form->end(); ?>
+
+
+<br />
+<br />
+
+<h3>Actions</h3>
+
+<?php echo $this->Form->postLink('Delete', array('action' => 'delete', $this->Form->value('Ledcategory.id')), array('class' => 'btn btn-danger'), __('Are you sure you want to delete # %s?', $this->Form->value('Ledcategory.id'))); ?>
+
+<br />
+<br />
